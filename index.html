@@ -1,59 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CalcMaster - Free Online Calculator</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+header{
+background:#2563eb;
+color:#fff;
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:22px;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:20px;
+}
+
+.search{
+width:100%;
+padding:16px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:10px;
+margin-bottom:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:28px;
+}
+
+.card p{
+margin-bottom:20px;
+color:#666;
+}
+
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+text-decoration:none;
+padding:12px 30px;
+border-radius:8px;
+font-size:18px;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:50px;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>CalcMaster</h1>
+<p>Free Online Calculator Tools</p>
+</header>
+
+<div class="container">
+
+<input type="text" class="search" placeholder="Search calculator...">
+
+<div class="grid">
+
 <div class="card">
 <h3>Age Calculator</h3>
 <p>Calculate your exact age instantly.</p>
-<a href="age-calculator.html">Open</a>
+<a class="btn" href="age-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>BMI Calculator</h3>
 <p>Calculate your Body Mass Index.</p>
-<a href="bmi-calculator.html">Open</a>
+<a class="btn" href="bmi-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Percentage Calculator</h3>
 <p>Calculate percentages easily.</p>
-<a href="percentage-calculator.html">Open</a>
+<a class="btn" href="percentage-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Discount Calculator</h3>
 <p>Find discounts instantly.</p>
-<a href="discount-calculator.html">Open</a>
+<a class="btn" href="discount-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>EMI Calculator</h3>
-<p>Calculate monthly EMI.</p>
-<a href="emi-calculator.html">Open</a>
+<p>Calculate monthly EMI payments.</p>
+<a class="btn" href="emi-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Loan Calculator</h3>
-<p>Calculate total loan repayment.</p>
-<a href="loan-calculator.html">Open</a>
+<p>Calculate loan repayment.</p>
+<a class="btn" href="loan-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Currency Converter</h3>
 <p>Convert world currencies.</p>
-<a href="currency-converter.html">Open</a>
+<a class="btn" href="currency-converter.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Date Calculator</h3>
 <p>Calculate days between dates.</p>
-<a href="date-calculator.html">Open</a>
+<a class="btn" href="date-calculator.html">Open</a>
 </div>
 
 <div class="card">
 <h3>Scientific Calculator</h3>
-<p>Advanced calculations.</p>
-<a href="scientific-calculator.html">Open</a>
+<p>Advanced scientific calculations.</p>
+<a class="btn" href="scientific-calculator.html">Open</a>
 </div>
 
-<div class="card">
-<h3>Unit Converter</h3>
-<p>Convert units quickly.</p>
-<a href="unit-converter.html">Open</a>
 </div>
+
+</div>
+
+<footer>
+© 2026 CalcMaster. All Rights Reserved.
+</footer>
+
+</body>
+</html>
