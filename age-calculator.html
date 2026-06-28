@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Calculator - CalcMaster</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    max-width:400px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+h2{
+    text-align:center;
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:18px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#result{
+    margin-top:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Age Calculator</h1>
+<p>Calculate your exact age</p>
+</header>
+
+<div class="container">
+
+<label>Select Your Date of Birth</label>
+
+<input type="date" id="dob">
+
+<button onclick="calculateAge()">Calculate Age</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function calculateAge(){
+
+let dob=document.getElementById("dob").value;
+
+if(dob==""){
+document.getElementById("result").innerHTML="Please select your birth date.";
+return;
+}
+
+let birth=new Date(dob);
+
+let today=new Date();
+
+let age=today.getFullYear()-birth.getFullYear();
+
+let month=today.getMonth()-birth.getMonth();
+
+if(month<0 || (month===0 && today.getDate()<birth.getDate())){
+age--;
+}
+
+document.getElementById("result").innerHTML="Your Age is <br>"+age+" Years";
+
+}
+
+</script>
+
+</body>
+</html>
